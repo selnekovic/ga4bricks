@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ga4bricks"
+version = "0.1.0"
+description = "Reusable GA4 processing for Databricks"
+requires-python = ">=3.10"
+dependencies = ["pyyaml>=6.0"]
+
+[project.optional-dependencies]
+test = ["pyspark>=3.5"]
+dev = ["pyspark>=3.5", "pytest>=8.0"]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["ga4bricks*"]
+
+[tool.databricks.environment]
+environment_version = '6'
