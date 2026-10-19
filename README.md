@@ -1,4 +1,4 @@
-# ga4bricks
+# ga4bricks (Work in Progress)
 
 A lightweight Python library for transforming Google Analytics 4 (GA4) BigQuery export data in Databricks.
 
